@@ -15,7 +15,6 @@ To test the network status I recommend to access to a well-known page like googl
 Now that you know it works, let's see the interface and what does who.
 
 || GusNet's GusBundle Interface ||
-|![](GusBundle User Manual_https://www.codeplex.com/Download?ProjectName=gusnet&DownloadId=736768)|
 
 This is the GusBundle's main interface. 
 You can see in order: your hidden service address, list of configured paths on your hidden service, tools to control the paths, a list of buttons to control TOR and some start up options.
@@ -26,7 +25,7 @@ A hidden service is created automatically when you start GusNet's GusBundle. You
 
 To start serving pages you must add a path. Each path is composed by a virtual path and a physical path. The virtual path is the one at your hidden service (per example "/forum") and the physical path is where the pages to serve are stored.
 
-With GusNet's GusBundle you can serve [GusScript](GusScript)(GusScript) pages. If you only need to serve HTML, then you can rename your files to .gsc and you are set. If you need more complex behaviors and know how to program, the you can use [GusScript](GusScript)(GusScript), which is a variant of C# with some PHP touches.
+With GusNet's GusBundle you can serve [GusScript](GusScript.md) pages. If you only need to serve HTML, then you can rename your files to .gsc and you are set. If you need more complex behaviors and know how to program, the you can use [GusScript](GusScript.md), which is a variant of C# with some PHP touches.
 
 Remember that to execute a page you must add it to the link as "file=yourgsc", so, if you have configured the path "/forum" and want to execute the page "createpost.gsc", then the final link should point to "/forum?file=createpost". Note that the extension is not needed.
 
