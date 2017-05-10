@@ -4,7 +4,7 @@ Definition: _public class GusHttpProcessor_
 
 This class is the responsible of processing an HTTP/1.1|1.0 incomming request.
 
-It holds the information about the request (GET variables, POST data, headers...) and calls to the HandleRequest function of the [GusHttpServer](GusHttpServer) when the processing is done.
+It holds the information about the request (GET variables, POST data, headers...) and calls to the HandleRequest function of the [GusHttpServer](GusHttpServer.md) when the processing is done.
 
 ## Public properties
 
