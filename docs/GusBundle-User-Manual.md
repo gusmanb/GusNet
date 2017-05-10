@@ -25,7 +25,7 @@ A hidden service is created automatically when you start GusNet's GusBundle. You
 
 To start serving pages you must add a path. Each path is composed by a virtual path and a physical path. The virtual path is the one at your hidden service (per example "/forum") and the physical path is where the pages to serve are stored.
 
-With GusNet's GusBundle you can serve [GusScript](GusScript.md) pages. If you only need to serve HTML, then you can rename your files to .gsc and you are set. If you need more complex behaviors and know how to program, the you can use [GusScript](GusScript.md), which is a variant of C# with some PHP touches.
+With GusNet's GusBundle you can serve [GusScript](GusNet.GusScript.md) pages. If you only need to serve HTML, then you can rename your files to .gsc and you are set. If you need more complex behaviors and know how to program, the you can use [GusScript](GusNet.GusScript.md), which is a variant of C# with some PHP touches.
 
 Remember that to execute a page you must add it to the link as "file=yourgsc", so, if you have configured the path "/forum" and want to execute the page "createpost.gsc", then the final link should point to "/forum?file=createpost". Note that the extension is not needed.
 
