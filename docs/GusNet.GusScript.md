@@ -15,7 +15,7 @@ It's based on C# (it compiles as C#), so you can use anything you can do in C#, 
 Here is an example of a GusScript page
 
 ```
-{code:c#}
+
 <&@ import namespace="System.Threading" &> //Importing a namespace
 <& 
 
@@ -61,7 +61,7 @@ Here is an example of a GusScript page
 	The time is: <& echo(DateTime.Now.ToString()); &>
     </body>
 </html>
-{code:c#}
+
 ```
 
 As you can see it's like a mixture of both, PHP and C#, with the advantage over PHP that it executes compiled code and not parsed code.
@@ -91,20 +91,20 @@ As I have for now very little time and want to publish today this project, I'm j
 
 ## **GusScript keywords**
 
-_+**echo(x)**+_: writes an string to the Response stream.
-_+**binecho(x)**+_: writes binary data to the response stream. The input must be a byte[]() array.
-_+**head(x)**+_: retrieves a header from the response, returns null if not found.
-_+**head(x, y)**+_: adds a header to the response.
-_+**cookie(x)**+_: retrieves the value of a cookie, returns null if not found.
-_+**cookie(x,y)**+_: adds a cookie to the response.
-_+**forvar(x,y)**+_: creates a foreach(var x in y) loop.
-_+**forbuc(x,y)**+_: creates a for(int buc = x, buc < y; buc++) loop.
-_+**flush()**+_: flushes the Response stream.
-_+**bp()**+_: adds a breakpoint to the current line.
-_+**ok()**+_: sends a 200 OK response with the headers and cookies stored previously.
-_+**postfile(x)**+_: retrieves a [GusPostFile](GusPostFile) from the post files collection. Returns null if not found.
-_+**postvar(x)**+_ retrieves a POST variable. Returns null if not found.
-_+**getvar(x)**+_: retrieves a GET variable. Returns null if not found.
+- **echo(x)**: writes an string to the Response stream.
+- **binecho(x)**: writes binary data to the response stream. The input must be a byte[]() array.
+- **head(x)**: retrieves a header from the response, returns null if not found.
+- **head(x, y)**: adds a header to the response.
+- **cookie(x)**: retrieves the value of a cookie, returns null if not found.
+- **cookie(x,y)**: adds a cookie to the response.
+- **forvar(x,y)**: creates a foreach(var x in y) loop.
+- **forbuc(x,y)**: creates a for(int buc = x, buc < y; buc++) loop.
+- **flush()**: flushes the Response stream.
+- **bp()**: adds a breakpoint to the current line.
+- **ok()**: sends a 200 OK response with the headers and cookies stored previously.
+- **postfile(x)**: retrieves a [GusPostFile](GusPostFile) from the post files collection. Returns null if not found.
+- **postvar(x)**: retrieves a POST variable. Returns null if not found.
+- **getvar(x)**: retrieves a GET variable. Returns null if not found.
 
 As you can see, nothing really special is done, BUT, it makes to write a little web very very easy and fast. 
 
