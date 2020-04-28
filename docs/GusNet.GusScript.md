@@ -14,6 +14,7 @@ It's based on C# (it compiles as C#), so you can use anything you can do in C#, 
 
 Here is an example of a GusScript page
 
+```
 {code:c#}
 <&@ import namespace="System.Threading" &> //Importing a namespace
 <& 
@@ -61,7 +62,7 @@ Here is an example of a GusScript page
     </body>
 </html>
 {code:c#}
-
+```
 
 As you can see it's like a mixture of both, PHP and C#, with the advantage over PHP that it executes compiled code and not parsed code.
 
